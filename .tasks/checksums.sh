@@ -1,10 +1,9 @@
 #!/usr/bin/env bash
 
 # Include config
-source /home/a5hley/.tasks/sites.sh
-
-# Pushbullet token
-TOKEN=''
+dir=$(pwd)
+source "$dir"/conf.sh
+source "$dir"/slack.sh
 
 # Store sites with errors
 ERRORS=""

@@ -1,11 +1,11 @@
 # Simple Automated Tasks
 
-This is a repo for sharing how I manage automated tasks as part of the series [Hosting WordPress Yourself](https://deliciousbrains.com/hosting-wordpress-setup-secure-virtual-server/).
+Important automated tasks for WordPress - backup, permissions and checksums. 
 
 ## Installation
 
-Copy the [.tasks](https://github.com/A5hleyRich/simple-automated-tasks/tree/master/.tasks) directory to your home directory:
-
+Clone the repo to desired path
+:
 ```
 .tasks
      - backups.sh
@@ -29,9 +29,9 @@ site3.com
      + public
 ```
 
-Ensure the bash scripts have execute permissions `chmod +x backups.sh checksums.sh cron.sh permissions.sh sites.sh`.
+Ensure the bash scripts have execute permissions `chmod +x backups.sh checksums.sh cron.sh permissions.sh conf.sh`.
 
-Update [sites.sh](https://github.com/A5hleyRich/simple-automated-tasks/blob/master/.tasks/sites.sh#L4) with the absolute path to where your site directories reside. Update [backups.sh](https://github.com/A5hleyRich/simple-automated-tasks/blob/master/.tasks/backups.sh#L4), [checksums.sh](https://github.com/A5hleyRich/simple-automated-tasks/blob/master/.tasks/checksums.sh#L4), [cron.sh](https://github.com/A5hleyRich/simple-automated-tasks/blob/master/.tasks/cron.sh#L4) and [permissions.sh](https://github.com/A5hleyRich/simple-automated-tasks/blob/master/.tasks/permissions.sh#L4) with the absolute path of your sites.sh file.
+Update `conf.sh` with the absolute path to where your site directories reside. Update [backups.sh](https://github.com/A5hleyRich/simple-automated-tasks/blob/master/.tasks/backups.sh#L4), [checksums.sh](https://github.com/A5hleyRich/simple-automated-tasks/blob/master/.tasks/checksums.sh#L4), [cron.sh](https://github.com/A5hleyRich/simple-automated-tasks/blob/master/.tasks/cron.sh#L4) and [permissions.sh](https://github.com/A5hleyRich/simple-automated-tasks/blob/master/.tasks/permissions.sh#L4) with the absolute path of your sites.sh file.
 
 Add each site to the [sites.sh](https://github.com/A5hleyRich/simple-automated-tasks/blob/master/.tasks/sites.sh#L7) config file:
 
